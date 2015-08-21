@@ -1,0 +1,121 @@
+@font-face {
+	font-family: "Dear Joe 5 Casual";
+	src: url("fonts/DJ5CTRIAL.woff");
+}
+
+/* Change this later based on the website's color template */
+::-moz-selection {background-color: orange;}
+::selection {background-color: orange;}
+
+/* Global override */
+a {
+	color: inherit;
+}
+
+/* SECTIONS */
+.section {
+	background-size: cover;
+}
+
+.section#cover {
+	background-image: url("img/arch-03-large.jpg");
+	padding: 1em 0em;
+}
+
+.section#about {
+	background-image: url("img/cover-01-large.jpg");
+}
+
+.section#team {
+	background-image: url("img/cover-02-large.jpg");
+	background-position: 25% 0%;
+}
+
+.section#service {
+	background-image: url("img/interior-02.jpg");
+	background-position: 25% 60%;
+}
+
+.section#project1 {
+	background-image: url("img/arch-06.jpg");
+	background-position: 0% 0%;
+}
+
+#home-segment h1.ui.header {
+	/*margin-top: 2em;*/
+	margin-bottom: -0.25em;
+	font-size: 7em;
+	font-weight: normal;
+	font-family: "Dear Joe 5 Casual", sans-serif;
+}
+
+#home-segment h2 {
+	/*font-family: "Lato", sans-serif;*/
+}
+
+p.brief-desc {
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 2.5em;
+}
+
+p.brief-desc strong {
+	font-family: "Open Sans Bold", sans-serif;
+	letter-spacing: -1px;
+}
+
+.team-name {
+	font-family: "Lovelo Black", sans-serif;
+}
+
+.service-title {
+	font-family: "Lovelo Black", sans-serif;
+	font-size: 1.5em;	
+	letter-spacing: 2px;
+}
+
+.little-desc {
+	margin-top: -0.75em;
+	font-family: "Nexa", sans-serif;
+	font-size: 1.25em;
+}
+
+#gallery img{
+		overflow: hidden;
+		background-position: 50%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 700px) {
+/*	#home-segment {
+		min-height: 350px;
+	}*/
+	#home-segment h1.ui.header {
+		font-size: 2em;
+		margin-top: 1.5em;
+	}
+	#home-segment h2 {
+		margin-top: 0.5em;
+		font-size: 1.5em;
+	}
+}
+
+/* ANIMATION */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
